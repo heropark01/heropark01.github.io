@@ -398,7 +398,7 @@ figure.highlight pre .addition {
     position: absolute;
     top: 0;
     left: 0;
-    height: 44vh;
+    height: 80vh;
     width: 100%;
     object-fit: cover;
 }
