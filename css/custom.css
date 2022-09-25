@@ -61,8 +61,8 @@ hr:before {
     -ms-transition: all .2s ease-out;
     transition: all .2s ease-out;
     /* 若要使用风车效果，请去掉下面的注释 */
-    /* content: '\f863'; 
-    animation: avatar_turn_around 1s linear infinite; */
+    content: '\f863'; 
+    animation: avatar_turn_around 1s linear infinite;
 }
 #article-container h1 {
     padding-left: 1.4rem
@@ -93,7 +93,7 @@ hr:before {
 #article-container h2:before {
     margin-left: -1.4rem;
     top: calc(50% - .45rem);
-    font-size: .9rem
+    font-size: 1.2rem
 }
 
 #article-container h2:hover {
@@ -174,15 +174,17 @@ hr:before {
     padding-left: 1.2rem
 }
 
-#article-container ul {
+
+/* 修改ul，ol样式 */
+#article-container ul,#article-container ol {
     list-style: none;
 }
-#article-container ul li {
+#article-container ul li,#article-container ol li  {
     position: relative;
     margin: 6px 0;
     padding: .12em .4em .12em 1.4em;
 }
-#article-container ul li:before, #article-container li:before {
+#article-container ul li:before {
     position: absolute;
     top: .67em;
     left: 0;
@@ -198,6 +200,34 @@ hr:before {
     -o-transition: all .3s ease-out;
     -ms-transition: all .3s ease-out;
     transition: all .3s ease-out;
+}
+#article-container ul li:hover:before{
+    border: .215em solid #eb520b;
+}
+
+#article-container ol li:before {
+    position: absolute;
+    top: .44em;
+    left: -.5em;
+    content: counter(sectioncounter);
+    counter-increment:sectioncounter +1;
+    width: 1.5em;
+    height: 1.5em;
+    background: #a20dcf;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 12px;
+    transition: all 330ms ease-in-out;
+}
+#article-container ol li:hover:before {
+    transform: rotate(360deg);
+    background: #f658fc;
+}
+
+#article-container .tabs li::before {
+    display: none;
 }
 
 /* 样式优化 */
@@ -267,4 +297,24 @@ hr:before {
 
 figure.highlight pre .addition {
     color: #00bf03 !important;
+}
+
+/* 美化操作步骤面板 */
+.toggle > .toggle-button {
+    padding: 18px 15px;
+    background: #d4caca;
+    color: #1f2d3d;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: all 220ms ease-in;
+}
+.toggle:hover > .toggle-button{
+    /* background: #b4b3b3; */
+    color: rgb(107, 107, 107);
+    text-indent: 1em;
+}
+.toggle {
+    border-radius: 4px;
+    overflow: hidden;
 }
