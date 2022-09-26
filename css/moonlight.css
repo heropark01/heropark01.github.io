@@ -1,7 +1,7 @@
 
 #lampadario {
     position: fixed;
-    right: 6%;
+    left: 4%;
     top: 0;
     z-index: 100;
 }
@@ -50,7 +50,7 @@ input[value="off"]:checked ~
 #filo:after {
     -webkit-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
        -moz-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
-        -ms-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+        -ms-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);   
          -o-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
             box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
 }
@@ -146,14 +146,7 @@ input[value="on"]:checked ~
 #lampadina #sorpresa {
     opacity: 1;
 }
-#footer {
-    position: fixed;
-    width: 94%;
-    text-align: center;
-    bottom: 30%;
-    padding: 0 3%;
-    z-index:1;
-}
+
 #shadow {
     position: fixed;
     width: 94%;
