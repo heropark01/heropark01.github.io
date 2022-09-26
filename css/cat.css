@@ -51,7 +51,7 @@ body::-webkit-scrollbar {
 
 }
 .neko.canShowMsg::before {
-    content: attr(data-msg);
+    content: attr(data-lmsg);
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -77,6 +77,9 @@ body::-webkit-scrollbar {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
+
 
 .neko.fontColor::after {
     color: #333;

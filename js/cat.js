@@ -106,7 +106,7 @@ if (document.body.clientWidth > 992) {
                             .addClass("canShowMsg");
                         
                         $("#" + setting.nekoname)
-                            .attr("data-msg", '客官~ 喵喵好饿诶, 给点打赏嘛~~');
+                            .attr("data-lmsg", '客官~ 喵喵好饿诶, 给点打赏嘛~~');
                         
                     }else if(basicInfo.ScrollTop > (basicInfo.S_V/10)*6.1 &&  basicInfo.ScrollTop < (basicInfo.S_V/10)*9.5) {
                         $("#" + setting.nekoname)
@@ -114,7 +114,7 @@ if (document.body.clientWidth > 992) {
                         $("#" + setting.nekoname)
                             .addClass("canShowMsg");  
                         $("#" + setting.nekoname)
-                            .attr("data-msg", '从未见过有如此厚颜无耻之人，光看不打赏，咿咿呀呀，大威天龙~~~');
+                            .attr("data-lmsg", '从未见过有如此厚颜无耻之人，光看不打赏，咿咿呀呀，大威天龙~~~');
                     }else {
                         $("#" + setting.nekoname)
                             .removeClass("showMsg");
